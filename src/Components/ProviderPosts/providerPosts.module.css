@@ -1,0 +1,441 @@
+.containerCard {
+  flex: 1;
+  min-width: 20rem;
+  height: 22rem;
+  position: relative;
+  opacity: 0;
+  height: 23rem;
+  animation: animation_opacity 0.3s ease forwards;
+}
+
+@keyframes animation_opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+.post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--white);
+  border-radius: 0.2rem;
+}
+
+.post .post_header {
+  width: 100%;
+  padding: 1rem;
+  text-transform: capitalize;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post .post_header p:first-of-type {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.post .post_header p:last-of-type {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ede7e1;
+}
+
+.post .post_header p:last-of-type span {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.post .post_header p:last-of-type span::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  top: 50%;
+  right: -0.7rem;
+}
+
+.post_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  padding: 0 0.7rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  max-width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 0 black;
+}
+
+hr {
+  margin: 0.3rem 0;
+  height: 0.1rem;
+  width: 100%;
+  background-color: rgb(121, 117, 117);
+  border: none;
+}
+
+.post_action {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.post_action p {
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px 0 black;
+  max-width: 5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.post_action p svg {
+  margin-right: 0.3rem;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.post_action p:first-of-type {
+  margin-right: 1rem;
+}
+
+.share {
+  background: none;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-shadow: 1px 1px 0 black;
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.5rem;
+  z-index: 20;
+}
+
+.share_list {
+  background: none;
+  width: 2rem;
+  height: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-shadow: 1px 1px 0 black;
+  z-index: 20;
+}
+
+/* List */
+
+.table {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-collapse: collapse;
+  margin: 4rem 0;
+}
+
+.table thead {
+  width: 100%;
+  height: 3rem;
+}
+
+.table thead tr {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.table thead tr th:first-of-type {
+  width: 35%;
+  height: 100%;
+  text-align: left;
+}
+
+.table thead tr th:nth-of-type(2) {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+.table thead tr th:nth-of-type(3) {
+  width: 20%;
+  max-width: 5rem;
+  height: 100%;
+  text-align: center;
+}
+
+.table thead tr th:nth-of-type(4) {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+.table thead tr th:last-of-type {
+  width: 10%;
+  height: 100%;
+  text-align: center;
+}
+
+.table tbody {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+
+.table tbody tr {
+  width: 100%;
+  height: 3rem;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray);
+}
+
+.table tbody tr:hover {
+  background-color: var(--gray);
+}
+
+.table tbody tr td:first-of-type {
+  text-align: left;
+  width: 35%;
+  height: 100%;
+}
+
+.table tbody tr td:first-of-type a {
+  font-size: 1.1rem;
+  color: var(--black);
+  font-weight: 500;
+  width: 100%;
+}
+
+.table tbody tr td:first-of-type a:hover {
+  text-decoration: underline;
+}
+
+.table tbody tr td:first-of-type p {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+  text-overflow: ellipsis;
+}
+
+.table tbody tr td:nth-of-type(2) {
+  width: 20%;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.table tbody tr td:nth-of-type(3) {
+  width: 20%;
+  max-width: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 400;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.table tbody tr td:nth-of-type(4) {
+  width: 20%;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.table tbody tr td:last-of-type {
+  width: 5%;
+
+  display: grid;
+  justify-content: start;
+}
+
+.table tbody tr td:last-of-type button {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  z-index: 5;
+  color: var(--black);
+  background: none;
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1300px) {
+  .table thead tr th:nth-of-type(1),
+  .table tbody tr td:nth-of-type(1) {
+    width: 55%;
+    display: inline-block;
+  }
+  .table thead tr th:nth-of-type(2),
+  .table tbody tr td:nth-of-type(2) {
+    width: 15%;
+    display: inline-block;
+  }
+  .table thead tr th:nth-of-type(3),
+  .table tbody tr td:nth-of-type(3) {
+    width: 15%;
+    display: inline-block;
+  }
+  .table thead tr th:nth-of-type(4),
+  .table tbody tr td:nth-of-type(4) {
+    width: 15%;
+    display: inline-block;
+  }
+
+  .table thead tr th:nth-of-type(5),
+  .table tbody tr td:nth-of-type(5) {
+    width: 5%;
+    display: inline-block;
+    padding: 0.15rem 0;
+  }
+
+  .table tbody tr td:nth-of-type(1) a p {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .table thead tr th:nth-of-type(2),
+  .table tbody tr td:nth-of-type(2) {
+    display: none;
+  }
+
+  .table thead tr th:nth-of-type(1),
+  .table tbody tr td:nth-of-type(1) {
+    width: 70%;
+    display: inline-block;
+  }
+
+  .table thead tr th:nth-of-type(3),
+  .table tbody tr td:nth-of-type(3) {
+    width: 10%;
+    display: inline-block;
+  }
+  .table thead tr th:nth-of-type(4),
+  .table tbody tr td:nth-of-type(4) {
+    width: 15%;
+    display: inline-block;
+  }
+
+  .table thead tr th:nth-of-type(5),
+  .table tbody tr td:nth-of-type(5) {
+    width: 5%;
+    display: inline-block;
+    padding: 0.15rem 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .table thead tr th:nth-of-type(2),
+  .table tbody tr td:nth-of-type(2),
+  .table thead tr th:nth-of-type(3),
+  .table tbody tr td:nth-of-type(3) {
+    display: none;
+  }
+
+  .table thead tr th:nth-of-type(1),
+  .table tbody tr td:nth-of-type(1) {
+    width: 70%;
+    display: inline-block;
+  }
+
+  .table thead tr th:nth-of-type(4),
+  .table tbody tr td:nth-of-type(4) {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .table thead tr th:nth-of-type(5),
+  .table tbody tr td:nth-of-type(5) {
+    width: 5%;
+    display: inline-block;
+    padding: 0.15rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table thead tr th:nth-of-type(2),
+  .table tbody tr td:nth-of-type(2),
+  .table thead tr th:nth-of-type(3),
+  .table tbody tr td:nth-of-type(3),
+  .table thead tr th:nth-of-type(4),
+  .table tbody tr td:nth-of-type(4) {
+    display: none;
+  }
+
+  .table {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .table thead {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .table tbody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table tbody tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table tbody tr td:nth-of-type(1) {
+    width: 95%;
+    display: flex;
+    align-items: center;
+  }
+  .table tbody tr td:nth-of-type(5) {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerCard {
+    width: 90%;
+  }
+
+  .post {
+    font-size: 1.2rem;
+  }
+
+  .post .post_footer .post_action p {
+    max-width: 4.2rem;
+  }
+}

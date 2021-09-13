@@ -1,0 +1,257 @@
+.containerConfig {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerConfig .config_center {
+  width: 80%;
+  height: 90%;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  transition: 0.35s;
+}
+
+.containerConfig .config_center h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--black);
+  position: relative;
+}
+
+.containerConfig .config_center .form_title {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.containerConfig .config_center .form_title label {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: var(--white);
+  padding: 0 1rem;
+}
+.containerConfig .config_center .form_title input {
+  width: 100%;
+  height: 3.7rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-600);
+  outline: none;
+  font-size: 1.02rem;
+}
+
+.containerConfig .config_center .form_logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.containerConfig .config_center .form_logo .input_group {
+  width: 13rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.containerConfig .config_center .form_logo .input_group label {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: var(--white);
+  padding: 0 1rem;
+}
+
+.containerConfig .config_center .form_logo .input_group input {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-600);
+  outline: none;
+  height: 3.7rem;
+  font-size: 1.02rem;
+}
+
+.containerConfig .config_center .form_logo .file_upload {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.containerConfig .config_center .form_logo .file_upload svg {
+  color: var(--black);
+  font-size: 1.4rem;
+}
+
+.containerConfig .config_center .form_logo .file_upload button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.containerConfig .config_center .form_logo .file_upload button svg {
+  font-size: 2rem;
+  color: var(--white);
+  opacity: 0;
+}
+
+.containerConfig .config_center .form_logo .file_upload button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.containerConfig .config_center .form_logo .file_upload button:hover svg {
+  opacity: 1;
+}
+
+.containerConfig .config_center .content_banner {
+  width: 100%;
+  height: 20rem;
+}
+
+.containerConfig .config_center .content_banner .file_banner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+}
+
+.containerConfig .config_center .content_banner .file_banner strong {
+  color: var(--brown);
+}
+
+.containerConfig .config_center .content_banner .file_banner svg {
+  margin-right: 0.5rem;
+  color: var(--brown);
+  font-size: 1.5rem;
+}
+
+.containerConfig .config_center .content_banner .file_banner button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.containerConfig .config_center .content_banner .file_banner button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.containerConfig .config_center .content_banner .file_banner button svg {
+  font-size: 4rem;
+  color: var(--white);
+  opacity: 0;
+}
+.containerConfig .config_center .content_banner .file_banner button:hover svg {
+  opacity: 1;
+}
+
+.containerConfig .config_center .button_group {
+  width: 100%;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.containerConfig .config_center .button_group button {
+  background-color: var(--black);
+  border: none;
+  width: 10rem;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-weight: 500;
+  filter: brightness(0.9);
+  transition: 0.3s ease;
+}
+
+.containerConfig .config_center .button_group button svg {
+  margin-right: 0.3rem;
+}
+
+.containerConfig .config_center .button_group button:hover {
+  filter: brightness(1);
+}
+
+@media screen and (max-width: 601px) {
+  .containerConfig .config_center {
+    padding: 1rem;
+  }
+  .containerConfig .config_center h2 {
+    text-align: center;
+  }
+  .containerConfig .config_center .form_logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerConfig .config_center .form_logo .input_group {
+    width: 100%;
+  }
+
+  .containerConfig .config_center .form_logo .input_group label {
+    top: -1rem;
+    left: 2rem;
+  }
+  .containerConfig .config_center .content_banner .file_banner {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .containerConfig .config_center .form_title label {
+    left: 2rem;
+  }
+}

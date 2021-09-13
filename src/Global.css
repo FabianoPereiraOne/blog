@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --white: #fff;
+    --gray: #F2F3F7;
+    --gray-600: #c2c2c3;
+    --gray-dark: #3C403E;
+    --blue: #75AEAE;
+    --black: #1D1F1E;
+    --brown: #583538;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1080px){
+    html,#root,body{
+        font-size: 93.75%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 768px){
+    html,#root,body{
+        font-size: 87.5%;
+    }
+}
+@media screen and (max-width: 600px){
+    html,#root,body{
+        font-size: 81.25%;
+    }
+}

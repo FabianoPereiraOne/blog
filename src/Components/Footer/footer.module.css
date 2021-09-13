@@ -1,0 +1,182 @@
+.rodape {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.rodape nav {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape nav h5 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.rodape nav ul,
+li {
+  list-style: none;
+  width: 4rem;
+}
+
+.rodape nav ul li {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rodape nav ul li a {
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+  filter: brightness(0.5);
+}
+
+.rodape nav ul li a:hover {
+  filter: brightness(1);
+}
+
+.rodape .copy {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  justify-content: center;
+}
+
+.rodape .copy section img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+}
+
+.rodape .copy section span {
+  color: var(--gray);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.rodape .copy section:nth-child(2) {
+  margin-top: 0.5rem;
+}
+
+.rodape .copy section:nth-child(1),
+.rodape .copy section:nth-child(2),
+.rodape .copy section:nth-child(3) {
+  width: 100%;
+  padding: 0.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape .copy section:nth-child(2),
+.rodape .copy section:nth-child(3) {
+  color: var(--gray);
+  filter: brightness(0.5);
+}
+
+.rodape .social {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.rodape .social div {
+  width: 7rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rodape .social div a {
+  color: var(--gray);
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+.rodape .social div a:hover {
+  color: var(--blue);
+}
+
+@media screen and (max-width: 600px) {
+  .rodape {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .rodape nav,
+  .rodape .copy,
+  .rodape .social {
+    width: 100%;
+  }
+
+  .rodape nav {
+    align-items: flex-start;
+  }
+
+  .rodape nav h5 {
+    font-size: 1.7rem;
+    margin: 0.5rem auto;
+  }
+
+  .rodape nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rodape nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rodape nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  .rodape .copy {
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .rodape .social {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .rodape .social div {
+    width: auto;
+    gap: 1rem;
+  }
+
+  .rodape .copy section span {
+    display: none;
+  }
+}

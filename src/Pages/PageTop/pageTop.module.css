@@ -1,0 +1,222 @@
+.section_post_ten {
+    width: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 4rem 0;
+  }
+  
+  .section_post_ten h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .section_post_ten h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--black);
+    max-width: 30rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .section_post_ten .containerCardTen {
+    width: 90%;
+    min-height: 70vh;
+    padding: 1rem 0;
+    gap: 1rem;
+    margin: 1rem 0;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section_post_ten .containerCard {
+    width: 16rem;
+    height: 15rem;
+    position: relative;
+  }
+  
+  .section_post_ten .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    border-radius: 0.2rem;
+  }
+  
+  .section_post_ten .post .post_header {
+    width: 100%;
+    padding: 1rem;
+    text-transform: capitalize;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .section_post_ten .post .post_header p:first-of-type {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  
+  .section_post_ten .post .post_header p:last-of-type {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #ede7e1;
+  }
+  
+  .section_post_ten .post .post_header p:last-of-type span {
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  .section_post_ten .post .post_header p:last-of-type span::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--white);
+    transform: translate(-50%, -50%);
+  
+    position: absolute;
+    top: 50%;
+    right: -0.7rem;
+  }
+  
+  .section_post_ten .post .post_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section_post_ten .post .post_footer h3 {
+    padding: 0 0.7rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    max-width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 0 black;
+    text-align: left;
+  }
+  
+  .section_post_ten .post .post_footer hr {
+    margin: 0.3rem 0;
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgb(121, 117, 117);
+    border: none;
+  }
+  
+  .section_post_ten .post .post_footer .post_action {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .section_post_ten .post .post_footer .post_action p {
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 0 black;
+    max-width: 5rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .section_post_ten .post .post_footer .post_action p svg {
+    margin-right: 0.3rem;
+    color: var(--white);
+    font-size: 1.2rem;
+  }
+  
+  .section_post_ten .post .post_footer .post_action p:first-of-type {
+    margin-right: 1rem;
+  }
+  
+  .share {
+    background: none;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-shadow: 1px 1px 0 black;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.5rem;
+    z-index: 20;
+  }
+  
+  .share_list {
+    background: none;
+    width: 2rem;
+    height: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-shadow: 1px 1px 0 black;
+    z-index: 20;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1080px) {
+    .section_post_ten .containerCardTen {
+      width: 80%;
+      justify-content: center;
+    }
+
+    .section_post_ten .containerCard {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .section_post_ten .containerCardTen {
+      justify-content: center;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .section_post_ten h2 {
+      padding: 0 1rem;
+      font-size: 2.2rem;
+    }
+  
+    .section_post_ten h4 {
+      padding: 0 1.6rem;
+    }
+  
+    .section_post_ten .containerCard {
+      width: 90%;
+      height: 25rem;
+    }
+  
+    .section_post_ten .containerCardTen {
+      justify-content: center;
+    }
+  }
+  

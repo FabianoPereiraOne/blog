@@ -1,0 +1,51 @@
+.section_cadastro {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 4rem;
+}
+
+.section_cadastro .nav_group {
+  width: 100%;
+  height: 5rem;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section_cadastro .nav_group button {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.section_cadastro .nav_group button.activeBtn::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  background-color: black;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 601px) {
+  .section_cadastro {
+    padding: 1rem 2rem;
+  }
+
+  .section_cadastro .nav_group {
+    gap: 2rem;
+  }
+}

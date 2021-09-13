@@ -1,0 +1,5 @@
+--white: #fff;
+--gray: #F2F3F7;
+--blue: #75AEAE;
+--black: #1D1F1E;
+--brown: #583538;
